@@ -61,6 +61,7 @@
             this.MailCheckBox.TabIndex = 2;
             this.MailCheckBox.Text = "メールを送信する";
             this.MailCheckBox.UseVisualStyleBackColor = true;
+            this.MailCheckBox.CheckedChanged += new System.EventHandler(this.MailCheckBox_CheckedChanged);
             // 
             // MailAddressTextBox
             // 

@@ -21,5 +21,18 @@ namespace WinForm
         {
 
         }
+
+        private void MailCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (MailCheckBox.Checked)
+            {
+                MailAddressTextBox.Enabled = true;
+
+            }
+            else
+            {
+                MailAddressTextBox.Enabled = false;
+            }
+        }
     }
 }
