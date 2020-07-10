@@ -37,18 +37,10 @@ namespace WinForm
         //自作関数を作る
         private void SetMailAddressTextBox()
         {
-            if (MailCheckBox.Checked)
-            {
-                MailAddressTextBox.Enabled = true;
-                MailAddressLabel.Enabled = true;
+  
+            MailAddressTextBox.Enabled = MailCheckBox.Checked;
+            MailAddressLabel.Enabled = MailCheckBox.Checked;
 
-            }
-            else
-            {
-                MailAddressTextBox.Enabled = false;
-                MailAddressLabel.Enabled = false;
-
-            }
         }
 
     }
