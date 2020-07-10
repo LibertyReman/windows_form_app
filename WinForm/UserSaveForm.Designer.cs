@@ -1,6 +1,6 @@
 ﻿namespace WinForm
 {
-    partial class Form1
+    partial class UserSaveForm
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -28,13 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.IdLabel = new System.Windows.Forms.Label();
+            this.IdTextBox = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // IdLabel
+            // 
+            this.IdLabel.AutoSize = true;
+            this.IdLabel.Location = new System.Drawing.Point(22, 19);
+            this.IdLabel.Name = "IdLabel";
+            this.IdLabel.Size = new System.Drawing.Size(16, 12);
+            this.IdLabel.TabIndex = 0;
+            this.IdLabel.Text = "ID";
+            this.IdLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // IdTextBox
+            // 
+            this.IdTextBox.Location = new System.Drawing.Point(62, 16);
+            this.IdTextBox.Name = "IdTextBox";
+            this.IdTextBox.Size = new System.Drawing.Size(100, 19);
+            this.IdTextBox.TabIndex = 1;
+            // 
+            // UserSaveForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(501, 366);
+            this.Controls.Add(this.IdTextBox);
+            this.Controls.Add(this.IdLabel);
+            this.Name = "UserSaveForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ユーザ登録";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label IdLabel;
+        private System.Windows.Forms.TextBox IdTextBox;
     }
 }
 
