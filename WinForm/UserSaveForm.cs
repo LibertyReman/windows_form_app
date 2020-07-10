@@ -12,9 +12,16 @@ namespace WinForm
 {
     public partial class UserSaveForm : Form
     {
+        //UserSaveForm()はクラス名　public -..はコンストラクタ
+        //オブジェクトが生成されるときに呼ばれる
         public UserSaveForm()
         {
+            //UserSaveForm.Designer.csが動く 画面のレイアウトが設定される
             InitializeComponent();
+
+            //起動時にチェックボックスはオフなのでテキストボックスはグレーアウトする
+            SetMailAddressTextBox();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,15 +31,25 @@ namespace WinForm
 
         private void MailCheckBox_CheckedChanged(object sender, EventArgs e)
         {
+            SetMailAddressTextBox();
+        }
+
+        //自作関数を作る
+        private void SetMailAddressTextBox()
+        {
             if (MailCheckBox.Checked)
             {
                 MailAddressTextBox.Enabled = true;
+                MailAddressLabel.Enabled = true;
 
             }
             else
             {
                 MailAddressTextBox.Enabled = false;
+                MailAddressLabel.Enabled = false;
+
             }
         }
+
     }
 }
