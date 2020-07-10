@@ -19,8 +19,16 @@ namespace WinForm
             //UserSaveForm.Designer.csが動く 画面のレイアウトが設定される
             InitializeComponent();
 
+
+            //起動時のチェックを指定する
+            MailCheckBox.Checked = false;
+            FreeRadioButton.Checked = true;
+
+
             //起動時にチェックボックスはオフなのでテキストボックスはグレーアウトする
             SetMailAddressTextBox();
+            PlanChange();
+
 
         }
 
@@ -41,6 +49,18 @@ namespace WinForm
             MailAddressTextBox.Enabled = MailCheckBox.Checked;
             MailAddressLabel.Enabled = MailCheckBox.Checked;
 
+        }
+
+        private void BusinessRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            PlanChange();
+        }
+
+
+        //自作関数
+        private void PlanChange()
+        {
+            NoteLabel.Visible = BusinessRadioButton.Checked;
         }
 
     }
