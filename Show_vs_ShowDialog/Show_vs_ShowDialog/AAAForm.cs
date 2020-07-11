@@ -16,5 +16,17 @@ namespace Show_vs_ShowDialog
         {
             InitializeComponent();
         }
+
+        private void OKButton_Click(object sender, EventArgs e)
+        {
+            //showの場合、画面を閉じる動作を記述する必要あり
+            Close();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            //showの場合、画面を閉じる動作を記述する必要あり
+            Close();
+        }
     }
 }
