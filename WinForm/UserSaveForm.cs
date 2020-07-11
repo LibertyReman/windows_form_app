@@ -19,6 +19,13 @@ namespace WinForm
             //UserSaveForm.Designer.csが動く 画面のレイアウトが設定される
             InitializeComponent();
 
+            EnableComboBox.Items.Add("有効");
+            EnableComboBox.Items.Add("無効");
+            //コンボボックスにテキストを入力できないようにする
+            EnableComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            //コンボボックスの初期値を設定
+            EnableComboBox.SelectedIndex = 0;
+
 
             //起動時のチェックを指定する
             MailCheckBox.Checked = false;

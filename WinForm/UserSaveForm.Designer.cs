@@ -34,9 +34,10 @@
             this.MailAddressTextBox = new System.Windows.Forms.TextBox();
             this.MailAddressLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.FreeRadioButton = new System.Windows.Forms.RadioButton();
             this.BusinessRadioButton = new System.Windows.Forms.RadioButton();
+            this.FreeRadioButton = new System.Windows.Forms.RadioButton();
             this.NoteLabel = new System.Windows.Forms.Label();
+            this.EnableComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,17 +96,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "プラン";
             // 
-            // FreeRadioButton
-            // 
-            this.FreeRadioButton.AutoSize = true;
-            this.FreeRadioButton.Location = new System.Drawing.Point(7, 29);
-            this.FreeRadioButton.Name = "FreeRadioButton";
-            this.FreeRadioButton.Size = new System.Drawing.Size(47, 16);
-            this.FreeRadioButton.TabIndex = 0;
-            this.FreeRadioButton.TabStop = true;
-            this.FreeRadioButton.Text = "無料";
-            this.FreeRadioButton.UseVisualStyleBackColor = true;
-            // 
             // BusinessRadioButton
             // 
             this.BusinessRadioButton.AutoSize = true;
@@ -118,6 +108,17 @@
             this.BusinessRadioButton.UseVisualStyleBackColor = true;
             this.BusinessRadioButton.CheckedChanged += new System.EventHandler(this.BusinessRadioButton_CheckedChanged);
             // 
+            // FreeRadioButton
+            // 
+            this.FreeRadioButton.AutoSize = true;
+            this.FreeRadioButton.Location = new System.Drawing.Point(7, 29);
+            this.FreeRadioButton.Name = "FreeRadioButton";
+            this.FreeRadioButton.Size = new System.Drawing.Size(47, 16);
+            this.FreeRadioButton.TabIndex = 0;
+            this.FreeRadioButton.TabStop = true;
+            this.FreeRadioButton.Text = "無料";
+            this.FreeRadioButton.UseVisualStyleBackColor = true;
+            // 
             // NoteLabel
             // 
             this.NoteLabel.AutoSize = true;
@@ -127,11 +128,20 @@
             this.NoteLabel.TabIndex = 6;
             this.NoteLabel.Text = "無制限で使えます";
             // 
+            // EnableComboBox
+            // 
+            this.EnableComboBox.FormattingEnabled = true;
+            this.EnableComboBox.Location = new System.Drawing.Point(24, 216);
+            this.EnableComboBox.Name = "EnableComboBox";
+            this.EnableComboBox.Size = new System.Drawing.Size(121, 20);
+            this.EnableComboBox.TabIndex = 7;
+            // 
             // UserSaveForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 366);
+            this.Controls.Add(this.EnableComboBox);
             this.Controls.Add(this.NoteLabel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.MailAddressTextBox);
@@ -160,6 +170,7 @@
         private System.Windows.Forms.RadioButton BusinessRadioButton;
         private System.Windows.Forms.RadioButton FreeRadioButton;
         private System.Windows.Forms.Label NoteLabel;
+        private System.Windows.Forms.ComboBox EnableComboBox;
     }
 }
 
