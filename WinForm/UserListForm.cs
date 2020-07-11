@@ -12,6 +12,8 @@ namespace WinForm
 {
     public partial class UserListForm : Form
     {
+        //型式UserInfoDTOの配列 
+        private BindingList<UserInfoDTO> _dtos = new BindingList<UserInfoDTO>();
         public UserListForm()
         {
             InitializeComponent();
@@ -22,8 +24,20 @@ namespace WinForm
             foreach (string line in lines)
             {
                 string[] row = line.Split(',');
+                UserInfoDTO dto = new UserInfoDTO(
+                    row[0],
+                    row[1],
+                    row[2],
+                    row[3],
+                    row[4]);
+                //データ追加
+                _dtos.Add(dto);
             }
+
+            //データを表示
+            UserDataGrid.DataSource = _dtos;
         }
+
     }
 }
 
