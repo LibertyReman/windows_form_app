@@ -69,6 +69,12 @@ namespace WinForm
         {
             NoteLabel.Visible = BusinessRadioButton.Checked;
         }
+        
 
+        //保存ボタンクリックイベント
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("保存しますか？", "確認", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+        }
     }
 }

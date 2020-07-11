@@ -145,9 +145,9 @@
             this.panel1.Controls.Add(this.CloseButton);
             this.panel1.Controls.Add(this.SaveButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 334);
+            this.panel1.Location = new System.Drawing.Point(0, 345);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(433, 47);
+            this.panel1.Size = new System.Drawing.Size(433, 36);
             this.panel1.TabIndex = 8;
             // 
             // SaveButton
@@ -155,17 +155,18 @@
             this.SaveButton.Dock = System.Windows.Forms.DockStyle.Left;
             this.SaveButton.Location = new System.Drawing.Point(0, 0);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(75, 47);
+            this.SaveButton.Size = new System.Drawing.Size(75, 36);
             this.SaveButton.TabIndex = 0;
             this.SaveButton.Text = "保存";
             this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // CloseButton
             // 
             this.CloseButton.Dock = System.Windows.Forms.DockStyle.Left;
             this.CloseButton.Location = new System.Drawing.Point(75, 0);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(75, 47);
+            this.CloseButton.Size = new System.Drawing.Size(75, 36);
             this.CloseButton.TabIndex = 1;
             this.CloseButton.Text = "閉じる";
             this.CloseButton.UseVisualStyleBackColor = true;
