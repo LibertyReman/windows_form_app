@@ -18,24 +18,29 @@ namespace WinForm
         {
             InitializeComponent();
 
-            //データを読み込む
-            string[] lines = System.IO.File.ReadAllLines("save.csv",Encoding.GetEncoding("shift_jis"));
-
-            foreach (string line in lines)
+            //読み込むファイルが存在しているかチェック
+            if (System.IO.File.Exists("save.csv"))
             {
-                string[] row = line.Split(',');
-                UserInfoDTO dto = new UserInfoDTO(
-                    row[0],
-                    row[1],
-                    row[2],
-                    row[3],
-                    row[4]);
-                //データ追加
-                _dtos.Add(dto);
-            }
+                //データを読み込む
+                string[] lines = System.IO.File.ReadAllLines("save.csv", Encoding.GetEncoding("shift_jis"));
 
-            //データを表示
-            UserDataGrid.DataSource = _dtos;
+                foreach (string line in lines)
+                {
+                    string[] row = line.Split(',');
+                    UserInfoDTO dto = new UserInfoDTO(
+                        row[0],
+                        row[1],
+                        row[2],
+                        row[3],
+                        row[4]);
+                    //データ追加
+                    _dtos.Add(dto);
+                }
+
+                //データを表示
+                UserDataGrid.DataSource = _dtos;
+            }
+ 
         }
 
     }
