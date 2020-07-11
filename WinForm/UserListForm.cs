@@ -17,7 +17,13 @@ namespace WinForm
             InitializeComponent();
 
             //データを読み込む
-            string[] lines = System.IO.File.ReadAllLines("save.csv");
+            string[] lines = System.IO.File.ReadAllLines("save.csv",Encoding.GetEncoding("shift_jis"));
+
+            foreach (string line in lines)
+            {
+                string[] row = line.Split(',');
+            }
         }
     }
 }
+
