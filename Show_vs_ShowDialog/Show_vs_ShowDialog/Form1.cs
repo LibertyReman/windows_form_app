@@ -51,6 +51,8 @@ namespace Show_vs_ShowDialog
             //値を渡す
             var f = new BBBForm(100);
             f.ShowDialog();
+            //画面間の値を戻す
+            MessageBox.Show(f.BBBValue + "円");
         }
     }
 }

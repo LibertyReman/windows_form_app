@@ -20,9 +20,20 @@ namespace Show_vs_ShowDialog
         public BBBForm(int value)
         {
             InitializeComponent();
+
+            //値を保持
             _value = value;
 
             this.Text = value.ToString();
+        }
+
+        //値を戻す
+        public int BBBValue
+        {
+            get
+            {
+                return Convert.ToInt32(BBBTextBox.Text);
+            }
         }
     }
 }
