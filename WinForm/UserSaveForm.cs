@@ -91,5 +91,11 @@ namespace WinForm
 
 
         }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            //画面を閉じる
+            Close();
+        }
     }
 }
