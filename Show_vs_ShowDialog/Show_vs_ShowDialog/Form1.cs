@@ -48,7 +48,8 @@ namespace Show_vs_ShowDialog
 
         private void BBBFormButton_Click(object sender, EventArgs e)
         {
-            var f = new BBBForm();
+            //値を渡す
+            var f = new BBBForm(100);
             f.ShowDialog();
         }
     }
