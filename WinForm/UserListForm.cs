@@ -39,8 +39,15 @@ namespace WinForm
 
                 //データを表示
                 UserDataGrid.DataSource = _dtos;
+
+                //カラム名を設定
+                UserDataGrid.Columns[0].HeaderText = "ID";
+                UserDataGrid.Columns[1].HeaderText = "メール送信";
+                UserDataGrid.Columns[2].HeaderText = "メールアドレス";
+                UserDataGrid.Columns[3].HeaderText = "プラン";
+                UserDataGrid.Columns[4].HeaderText = "有効／無効";
             }
- 
+
         }
 
     }
