@@ -20,7 +20,16 @@ namespace Show_vs_ShowDialog
         private void AAAFormButton_Click(object sender, EventArgs e)
         {
             var f = new AAAForm();
+            //AAAFormはShowDialogで表示したのでダイアログリザルトを設定した場合、自動で画面が閉じる
             f.ShowDialog();
+            if(f.DialogResult == DialogResult.OK)
+            {
+                MessageBox.Show("OKが押されました");
+            }
+            else if (f.DialogResult == DialogResult.Cancel)
+            {
+                MessageBox.Show("Chancelが押されました");
+            }
         }
 
         private void BBBFormButton_Click(object sender, EventArgs e)
