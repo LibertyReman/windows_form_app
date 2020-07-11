@@ -81,7 +81,14 @@ namespace WinForm
 
             if (dialogResult == DialogResult.OK)
             {
-                StatusLabel.Text = "保存しました";
+
+                using (var sw = new
+                    System.IO.StreamWriter(
+                    "save.txt", true, Encoding.GetEncoding("shift_jis")))
+                {
+                    sw.WriteLine("ABC");
+                }
+                    StatusLabel.Text = "保存しました";
             }
             else
             {
