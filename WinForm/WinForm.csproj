@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserListForm.Designer.cs">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserSaveForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserListForm.resx">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserSaveForm.resx">
       <DependentUpon>UserSaveForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -18,3 +18,5 @@ C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\WinForm\obj\Debu
 C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\WinForm\obj\Debug\WinForm.csproj.CoreCompileInputs.cache
 C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\WinForm\obj\Debug\WinForm.exe
 C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\WinForm\obj\Debug\WinForm.pdb
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\WinForm\obj\Debug\WinForm.MenuForm.resources
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\WinForm\obj\Debug\WinForm.UserListForm.resources

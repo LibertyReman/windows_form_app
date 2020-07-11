@@ -16,5 +16,21 @@ namespace WinForm
         {
             InitializeComponent();
         }
+
+        private void UserSaveFormButton_Click(object sender, EventArgs e)
+        {
+            using (var f = new UserSaveForm())
+            {
+                f.ShowDialog();
+            }
+        }
+
+        private void UserListFormButton_Click(object sender, EventArgs e)
+        {
+            using (var f = new UserListForm())
+            {
+                f.ShowDialog();
+            }
+        }
     }
 }
