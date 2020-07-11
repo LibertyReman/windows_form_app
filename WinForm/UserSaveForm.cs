@@ -86,9 +86,23 @@ namespace WinForm
                     System.IO.StreamWriter(
                     "save.txt", true, Encoding.GetEncoding("shift_jis")))
                 {
-                    sw.WriteLine("ABC");
+                    sw.Write(IdTextBox.Text);
+                    sw.Write(MailCheckBox.Checked);
+                    sw.Write(MailAddressTextBox.Text);
+                    if (BusinessRadioButton.Checked)
+                    {
+                        sw.Write("1");
+                    }
+                    else
+                    {
+                        sw.Write("0");
+                    }
+                    sw.Write(EnableComboBox.Text);
+                    sw.WriteLine("");
+
+
                 }
-                    StatusLabel.Text = "保存しました";
+                StatusLabel.Text = "保存しました";
             }
             else
             {
