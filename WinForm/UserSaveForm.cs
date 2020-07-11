@@ -19,6 +19,9 @@ namespace WinForm
             //UserSaveForm.Designer.csが動く 画面のレイアウトが設定される
             InitializeComponent();
 
+            StatusLabel.Text = "必要事項を記入して保存してください";
+
+
             EnableComboBox.Items.Add("有効");
             EnableComboBox.Items.Add("無効");
             //コンボボックスにテキストを入力できないようにする
@@ -74,15 +77,16 @@ namespace WinForm
         //保存ボタンクリックイベント
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("保存しますか？", "確認", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            DialogResult dialogResult = MessageBox.Show("保存しますか？", "確認", MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
 
-            if (dialogResult == DialogResult.Yes)
+            if (dialogResult == DialogResult.OK)
             {
-                MessageBox.Show("保存しました");
+                StatusLabel.Text = "保存しました";
             }
             else
             {
-                MessageBox.Show("キャンセルしました");
+                StatusLabel.Text = "キャンセルしました";
+
             }
 
 
