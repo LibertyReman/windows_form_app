@@ -1,0 +1,12 @@
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\bin\Debug\Show_vs_ShowDialog.exe.config
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\bin\Debug\Show_vs_ShowDialog.exe
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\bin\Debug\Show_vs_ShowDialog.pdb
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\obj\Debug\Show_vs_ShowDialog.csprojAssemblyReference.cache
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\obj\Debug\Show_vs_ShowDialog.AAAForm.resources
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\obj\Debug\Show_vs_ShowDialog.BBBForm.resources
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\obj\Debug\Show_vs_ShowDialog.Form1.resources
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\obj\Debug\Show_vs_ShowDialog.Properties.Resources.resources
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\obj\Debug\Show_vs_ShowDialog.csproj.GenerateResource.cache
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\obj\Debug\Show_vs_ShowDialog.csproj.CoreCompileInputs.cache
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\obj\Debug\Show_vs_ShowDialog.exe
+C:\Users\kubotakenta\programming\udemy\keikenzerokaraC#\WinForm\Show_vs_ShowDialog\Show_vs_ShowDialog\obj\Debug\Show_vs_ShowDialog.pdb
