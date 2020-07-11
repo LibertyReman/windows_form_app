@@ -49,6 +49,7 @@
             this.ClientSize = new System.Drawing.Size(425, 291);
             this.Controls.Add(this.UserDataGrid);
             this.Name = "UserListForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ユーザリスト";
             ((System.ComponentModel.ISupportInitialize)(this.UserDataGrid)).EndInit();
             this.ResumeLayout(false);

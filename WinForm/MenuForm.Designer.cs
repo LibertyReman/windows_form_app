@@ -62,6 +62,7 @@
             this.Controls.Add(this.UserListFormButton);
             this.Controls.Add(this.UserSaveFormButton);
             this.Name = "MenuForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "メニュー";
             this.ResumeLayout(false);
 
