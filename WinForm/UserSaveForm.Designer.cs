@@ -38,7 +38,11 @@
             this.FreeRadioButton = new System.Windows.Forms.RadioButton();
             this.NoteLabel = new System.Windows.Forms.Label();
             this.EnableComboBox = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.CloseButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // IdLabel
@@ -136,11 +140,42 @@
             this.EnableComboBox.Size = new System.Drawing.Size(121, 20);
             this.EnableComboBox.TabIndex = 7;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.CloseButton);
+            this.panel1.Controls.Add(this.SaveButton);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 334);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(433, 47);
+            this.panel1.TabIndex = 8;
+            // 
+            // SaveButton
+            // 
+            this.SaveButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SaveButton.Location = new System.Drawing.Point(0, 0);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(75, 47);
+            this.SaveButton.TabIndex = 0;
+            this.SaveButton.Text = "保存";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.CloseButton.Location = new System.Drawing.Point(75, 0);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(75, 47);
+            this.CloseButton.TabIndex = 1;
+            this.CloseButton.Text = "閉じる";
+            this.CloseButton.UseVisualStyleBackColor = true;
+            // 
             // UserSaveForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 366);
+            this.ClientSize = new System.Drawing.Size(433, 381);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.EnableComboBox);
             this.Controls.Add(this.NoteLabel);
             this.Controls.Add(this.groupBox1);
@@ -154,6 +189,7 @@
             this.Text = "ユーザ登録";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,6 +207,9 @@
         private System.Windows.Forms.RadioButton FreeRadioButton;
         private System.Windows.Forms.Label NoteLabel;
         private System.Windows.Forms.ComboBox EnableComboBox;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.Button SaveButton;
     }
 }
 
