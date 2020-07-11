@@ -15,6 +15,9 @@ namespace WinForm
         public UserListForm()
         {
             InitializeComponent();
+
+            //データを読み込む
+            string[] lines = System.IO.File.ReadAllLines("save.csv");
         }
     }
 }
